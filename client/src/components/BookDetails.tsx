@@ -8,9 +8,6 @@ const BookDetails = ({ bookId }) => {
   });
 
   if (bookId) {
-    // if (loading) return <p>Loading...</p>;
-    // if (error) return <p>Error :(</p>;
-    // if (data)
     return (
       <div className="book-details">
         {loading && <p>Loading...</p>}
@@ -30,9 +27,8 @@ const BookDetails = ({ bookId }) => {
         )}
       </div>
     );
-    // }
   } else {
-    return <div>No book selected...</div>;
+    return <div className="book-details">No book selected...</div>;
   }
 };
 

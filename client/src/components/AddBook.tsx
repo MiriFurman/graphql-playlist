@@ -26,7 +26,7 @@ const AddBook = () => {
   };
 
   return (
-    <form className="add-book" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <div className="field">
         <label>Book name:</label>
         <input
